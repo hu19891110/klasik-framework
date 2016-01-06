@@ -5,6 +5,9 @@
  */
 
 
+$path_quickwidget = get_template_directory() . '/includes/widgets/nl-quick-widget.php';
+if(file_exists($path_quickwidget)) include_once ($path_quickwidget);
+
 $path_featureswidget = get_template_directory() . '/includes/widgets/klasik-features-widget.php';
 if(file_exists($path_featureswidget)) include_once ($path_featureswidget);
 
@@ -49,7 +52,7 @@ function klasik_theme_widgets() {
 	register_widget("Klasik_TextWidget");
 	register_widget("Klasik_LatestNewsWidget");
 
-	
+
 	if( function_exists('is_woocommerce')){
 		register_widget("Klasik_WooProductWidget");
 	}
