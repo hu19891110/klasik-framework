@@ -1,0 +1,63 @@
+/*
+Theme Name: Klasik
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+caption,
+th,
+td {
+	text-align: right;
+}
+
+/* Klasik Layout */
+#logoimg a{direction: ltr;}
+
+#slideritems, .flexslider-carousel{
+  direction:ltr;
+  /*...*/
+}
+
+#entry-author-info #author-avatar {top:60px; left:auto; right:20px;}
+#entry-author-info #author-description { margin: 0px 98px 0px 0px; vertical-align:top;}
+
+.commentlist .comment-author{ float:right;}
+.commentlist .comment-body{margin-right:105px; margin-left:0px;}
+.commentlist li.comment ul.children{margin:0 11% 0 0px;}
+
+.klasik-recentpost-widget .recent-thumb{margin:0px 0px 0px 18px; float:right;}
+.klasik-features .img-container img{float:right; margin:3px 0px 0px 20px;}
+
+.klasik-latestnews-widget .recent-thumb img{float:right; margin:0px 0px 0px 15px;}
+
+.klasik-advancedpost-widget .tpl2 .recent-thumb{float:right; }
+.klasik-advancedpost-widget .tpl2 .recent-thumb .image{margin:0px 0px 0px 18px;}
+
+.klasik-testimonial-widget .testi-img .image{
+    float:right;
+    margin: 5px 0px 0 20px;
+}
+
+
+
+.klasik-events-widget .event-date-wrap {
+    float: right;
+    margin: 0 0 0 15px;
+}
+
+ul.page-numbers li{ float:right}
+
+
+/* Woocommerce */
+body.klasikt div.product .woocommerce-tabs ul.tabs, body.klasikt #content div.product .woocommerce-tabs ul.tabs{padding:0px 1em 0px 0px;}
+body.klasikt ul.products li.product{float: right; margin: 0 0 2.992em 3.8%;}
+body.klasikt ul.products li.last{margin-left:0px;}
+form.checkout .col2-set{overflow:hidden;}

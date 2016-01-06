@@ -1,0 +1,9 @@
+*** Klasik Framework Changelog ***
+
+2015.12.11 - Version 1.1
+  * includes/widgets/klasik-latestnews-widget.php - added function month numeric, with leading zeros 
+  * layout-header.php - bug fixed in search results if page use full width layout 
+  * layout-footer.php - bug fixed in search results if page use full width layout 
+
+2015.09.02 - Version 1.0
+  * First Release!

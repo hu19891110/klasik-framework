@@ -1,0 +1,183 @@
+
+/* #Media Queries
+================================================== */
+
+
+/* Smaller than standard 1680 (browsers) */
+@media only screen and (max-width: 1680px) {
+
+}
+
+
+
+/* Smaller than standard 1366 (browsers) */
+@media only screen and (max-width: 1366px) {
+
+}
+
+
+/* Smaller than standard 1280 ( browsers) */
+@media only screen and (max-width: 1280px) {
+
+}
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 959px) and (max-width: 1024px) {
+
+	
+	.widget-maintop .widget-container,
+	.widget-mainbottom .widget-container { 
+		padding-left:15px;
+		padding-right:15px;
+	}
+		
+	.flexslider-carousel ul.flex-direction-nav a.flex-prev {left: 20px;}
+	.flexslider-carousel ul.flex-direction-nav a.flex-next {right: 20px;}
+}
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (min-width: 959px) {
+	
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.contact{  margin:0 100px;}
+	body.klasikt .related ul.products li.product, body.klasikt .upsells.products ul.products li.product, body.klasikt .related ul li.product, 
+	body.klasit .upsells.products ul li.product {width: 48%;}
+	
+	
+	.widget-maintop .widget-container,
+	.widget-mainbottom .widget-container { 
+		padding-left:15px;
+		padding-right:15px;
+	}
+	
+	
+	.flexslider-carousel ul.flex-direction-nav a.flex-prev {left: 20px;}
+	.flexslider-carousel ul.flex-direction-nav a.flex-next {right: 20px;}
+	
+	
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	#bodychild{width:100%; margin:0}
+	#outerheader{height:auto;}
+	
+	/* layout */
+	.row .sidebarcol    { width: 100%; }
+	.row .contentcol 	{ width: 100%; }
+	
+	.widget-maintop .widget-container,
+	.widget-mainbottom .widget-container { 
+		padding-left:15px;
+		padding-right:15px;
+		margin: 0px auto; max-width: 420px;
+	}
+	
+	/*============================================== HEADER SECTION ==============================================*/
+	#logo{text-align:center; float:none; display:block; margin-bottom:20px;}
+	#logoimg img{margin:0px auto;}
+	
+	.container{ margin: 0px auto; max-width: 450px; }
+
+	#navigation{text-align:center; clear:both; margin:0px!important;}
+	.sf-menu a{background:transparent !important; border:0 !important}
+	.sf-menu > li{border:0 !important; display:none;}
+	nav{margin:0px; float:none; }
+	.js .tinynav { display: block; display: inline-block; text-align:left ; margin:0 0 0 0; width:50%}/* mobile dropdown */
+    .js #topnav { display: none }
+	
+
+	/*============================================== AFTER HEADER SECTION ==============================================*/
+	#outerafterheader{padding:0 0 0 0;}
+
+	.fa-icon-title{ display:block; text-align:center}
+	.fa-icon-title .fa{ margin:0px 0 0px}
+
+	
+	/*============================================== CONTENT SECTION ==============================================*/
+	
+	#content.positionright, #content.positionleft{background:transparent;}
+	.padcontent{padding-right:0;}
+	#content.positionright .padcontent{padding-left:0; padding-right:0}
+	#content.positionleft .main{ padding:0px; margin-bottom:30px;}
+	#content.positionleft .contenttop-container, #content.positionleft .contentbottom-container {  padding-right: 0px;}
+	#content.positionright .contentbottom-container, #content.positionright .contenttop-container  { padding-left: 00px;}
+	
+	.contact{  margin:0 0px;}
+		
+	.flexslider-carousel ul.flex-direction-nav a.flex-prev {left: 20px;}
+	.flexslider-carousel ul.flex-direction-nav a.flex-next {right: 20px;}
+	
+	.klasik-action-widget .action-button{ float:none; margin-top:15px; display:inline-block}
+
+	.wp-pagenavi{margin-bottom:30px;}
+
+	#sidebar.positionright div.widget-area{padding-left:0px;}
+	#sidebar.positionleft div.widget-area{padding-right:0px;}
+	
+	body.klasikt .related ul.products li.product, body.klasikt .upsells.products ul.products li.product, body.klasikt .related ul li.product, 
+	body.klasit .upsells.products ul li.product {width: 48%;}
+	
+	
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#bodychild{width:100%;}
+		
+	/* layout */
+	.row .sidebarcol    { width: 100%; }
+	.row .contentcol 	{ width: 100%; }
+	
+	#page-title-wrap {
+		display: block;
+		text-align: center;
+	}
+	#afterheader .pagetitle{ text-align:center; float:none; display:block; margin:0px;}
+	#afterheader .pagedesc{display:block; text-align:center;}
+	
+	#afterheader #breadcrumbs{
+	  width: auto;
+	  height: auto;
+	  position: inherit;
+	  text-align:center!important;
+	}
+
+	
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 480px) {
+	#bodychild{width:100%;}
+	
+	
+	#page-title-wrap {
+		display: block;
+		text-align: center;
+	}
+	#afterheader .pagetitle{ text-align:center; float:none; display:block; margin:0px;}
+	#afterheader .pagedesc{display:block; text-align:center;}
+	
+	#afterheader #breadcrumbs{
+	  width: auto;
+	  height: auto;
+	  position: inherit;
+	  text-align:center!important;
+	}
+
+
+	.commentlist ol{padding-left:20px;}
+	.comment-body{margin:0;}
+	
+	body.klasikt .related ul.products li.product, body.klasikt .upsells.products ul.products li.product, body.klasikt .related ul li.product, 
+	body.klasit .upsells.products ul li.product {width: 100%;}
+}

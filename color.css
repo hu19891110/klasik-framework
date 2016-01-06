@@ -1,0 +1,465 @@
+/*------------------------------------------------------------------
+
+Klasik Framework - CSS File
+
+CHANGE COLOR STYLE
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+
+[Table of contents]
+
+1. Global Elements
+2. Header 
+	2.1. Navigation
+	2.2. Slider
+3. Afterheader
+4. Content 
+	4.1. Widgets
+	4.2. Blog 
+5. Sidebar
+6. Footer Sidebar
+7. Footer
+8. Plugin
+
+-------------------------------------------------------------------*/
+
+
+
+/* 1. GLOBAL ELEMENTS
+--------------------------------------------------------------------------------------*/
+
+body {color:#606060; background-color:#ffffff; border-top:5px solid #383838}
+
+/* Logo */
+#logo h1 a, #logo h1 a:visited{color:#444;}
+
+/* Link */
+a, .morelink, .colortext, a.colortext{color:#c3512f;}
+a:hover, a.colortext:hover, .colortext a:hover, .morelink:hover{color:#606060}
+
+/* Heading & text */
+h1, h2, h3, h4, h5, h6{color:#444;}
+
+
+
+/* 2. HEADER SECTION 
+--------------------------------------------------------------------------------------*/
+
+#outerheader{ background-color:rgba(255,255,255,0.8); border-bottom:1px solid #ebebeb;}
+
+
+/*======= 2.1. Navigation =======*/
+.sf-menu a, .sf-menu a:visited{color:#858585;}/* 1st level */
+.sf-menu a:hover, .sf-menu li.current a{color:#444;}/* 1st level */
+.sf-menu li.sfHover a:hover{color:#444;}/* 2nd level */
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	background:#ffffff!important;
+	color:#858585;
+	border:1px solid #ebebeb;
+	border-top:2px solid #c4c4c4;
+
+}
+.sf-menu li li ul{ border-top:1px solid #ebebeb!important;}
+
+.sf-menu li li:first-child{
+	 border:0px;
+}
+.sf-menu > li li:before{
+	
+}
+.sf-menu ul li a{ color:#858585;  }
+.sf-menu ul li a:hover, #topnav li li a.current{color:#444;}
+
+.sf-menu a:hover, .sf-menu li.current-menu-item > a, .sf-menu li.current_page_item > a, .sf-menu li.current-menu-ancestor > a, .sf-menu li.current-menu-parent > a, .sf-menu li.current_page_ancestor > a, .sf-menu li.current_page_parent > a{color:#444;}
+
+
+
+/* Mobile Menu*/
+.tinynav{background:#fff; border:1px solid #eee;}
+
+
+
+/* 2.2. Slider 
+--------------------------------------------------------------------------------------*/
+
+#outerslider{border-bottom: 1px solid #e2e2e2; background:#fafafa}
+#slider .slider-title a, #slider .slider-title a:hover{ color:#fff}
+
+#slider .flex-caption {	background: rgba(0,0,0,0.5);}
+
+#slider .flex-control-nav a {background: #b4b4b4;}
+#slider .flex-control-paging li a:hover {background: #fff;}
+#slider .flex-control-paging li a.flex-active {background: #fff;}
+
+
+
+/* 3. AFTER HEADER SECTION 
+--------------------------------------------------------------------------------------*/
+#outerafterheader{ background-color:#fafafa; border-bottom:1px solid #ebebeb; }
+#afterheader #breadcrumbs { color:#aaa;}
+#afterheader #breadcrumbs a{ color:#aaa;}
+#afterheader #breadcrumbs a:hover{color:#c3512f;}
+.pagetitle{color:#444;}
+.pagedesc{ color:#606060;}
+
+
+/* 4. CONTENT SECTION 
+--------------------------------------------------------------------------------------*/
+
+/* Form */
+input[type="text"], input[type="email"],
+textarea, input[type="password"], select{
+	border:solid 1px #e2e2e2;
+	color:#888;
+}
+label{ color:#333;}
+span.required{ color:#f00;}
+
+/* Horizontal Line */
+hr {
+	color:#eaeaea;
+	background-color:#eaeaea;
+}
+
+.separator{ 
+	border-bottom: 1px solid #ebebeb;
+}
+
+/* List */
+ul.client{border:solid 1px #eaeaea;}
+ul.checklist li{ background:url(images/checklist.png) no-repeat 0 5px;}
+ul.list li{border-bottom:solid 1px #f0f0f0;}
+
+/* Button */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	background: #888; 
+	border:0;
+	color:#fff;
+	
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+	background: #5e5e5e; 
+	border:0;
+	color:#fff;
+}
+
+
+/* Blockquote */
+blockquote{ color:#606060; border-left:8px solid #6c6c6c}
+
+
+/* Dropcaps */	
+.dropcap1{text-shadow:1px 1px 0 #ededed; color:#2e2e2e}
+.dropcap2{color:#fff; background:#2e2e2e}		
+.dropcap3{color:#fff; background:#2e2e2e}
+
+
+/* Code */
+code {
+	border-left:4px solid #e9e9e9;
+}
+
+
+/* Bottomline*/
+.bottomline{border-color:#e7e7e7;}
+
+
+/*======= 4.1. Widgets =======*/
+
+/*** POSITION ON THEME ***/
+
+.maintop-container .all-widget-container,
+.mainbottom-container .all-widget-container{border-bottom: 1px solid #e2e2e2;}
+.mainbottom-container .widget-mainbottom:first-child .all-widget-container{ border-top:1px solid #e2e2e2;}
+
+.widget-subtitle{ color:#606060;}
+.widget-title {color:#444;}
+ 
+li,  li a,  li li a{color:#606060;}
+li a:hover, li li a:hover,  li li a.current{color:#c3512f;}
+
+
+/* Custom Class*/
+.custom1 .all-widget-wrapper{
+	background-image:url(http://demoimages.klasikthemes.com/bg-image.jpg);
+	background-repeat:no-repeat; 
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.custom2 .all-widget-wrapper{
+background-image:url(images/line-footer.png), url(images/line-top.png);
+ background-color:#c73b38 ;
+ background-repeat:repeat-x;
+ background-position:top, bottom;
+}
+
+
+/* Latest News */
+.klasik-latestnews-widget .recent-title,
+.klasik-latestnews-widget .recent-title a, 
+.klasik-latestnews-widget .recent-title a:visited{color:#444;}
+.klasik-latestnews-widget .recent-title a:hover{color:#c3512f;}
+.klasik-latestnews-widget .smalldate{color:#888;}
+.klasik-latestnews-widget .smalldate a{color:#888;}
+.klasik-latestnews-widget .smalldate a:hover{color:#c3512f;}
+
+#sidebar .klasik-latestnews-widget .recent-title,
+#sidebar .klasik-latestnews-widget .recent-title a, 
+#sidebar .klasik-latestnews-widget .recent-title a:visited{color:#444;}
+#sidebar .klasik-latestnews-widget .recent-title a:hover{color:#c3512f;}
+#sidebar .klasik-latestnews-widget .smalldate{color:#888;}
+
+#footersidebar .klasik-latestnews-widget .recent-title,
+#footersidebar .klasik-latestnews-widget .recent-title a, 
+#footersidebar .klasik-latestnews-widget .recent-title a:visited{color:#a4a4a4;}
+#footersidebar .klasik-latestnews-widget .recent-title a:hover{color:#d6d6d6;}
+#footersidebar .klasik-latestnews-widget .smalldate{color:#a4a4a4;}
+
+
+
+/* Action */
+.klasik-action-widget .item-container{ background:#fafafa; border:1px solid #efefef}
+.klasik-action-widget h2{color:#303030;}
+.klasik-action-widget h2{color:#606060;}
+
+#sidebar .klasik-action-widget .action-button .button.left, 
+.klasik-action-widget .action-button .button.left{background:#555; color:#fff;}
+
+#sidebar .klasik-action-widget .action-button .button.left:hover, 
+.klasik-action-widget .action-button .button.left:hover{background:#5e5e5e; color:#fff;}
+
+#sidebar .klasik-action-widget .action-button .button.right, 
+.klasik-action-widget .action-button .button.right{background:#555; color:#fff;}
+
+#sidebar .klasik-action-widget .action-button .button.right:hover, 
+.klasik-action-widget .action-button .button.right:hover{background:#5e5e5e; color:#fff;}
+
+/* Featured */
+.klasik-features .feature-title, 
+.klasik-features .feature-title a, 
+.klasik-features .feature-title a:visited{color:#444;}
+.klasik-features .feature-title a:hover{color:#c3512f;}
+
+#sidebar .klasik-features .feature-title, 
+#sidebar .klasik-features .feature-title a, 
+#sidebar .klasik-features .feature-title a:visited{color:#444;}
+#sidebar .klasik-features .feature-title a:hover{color:#c3512f;}
+
+#footersidebar .klasik-features .feature-title, 
+#footersidebar .klasik-features .feature-title a, 
+#footersidebar .klasik-features .feature-title a:visited{color:#a4a4a4;}
+#footersidebar .klasik-features .feature-title a:hover{color:#d6d6d6;}
+
+/* Team */
+.klasik-team-widget .team-title, 
+.klasik-team-widget .team-title a, 
+.klasik-team-widget .team-title a:visited{color:#444;}
+.klasik-team-widget .team-title a:hover{color:#c3512f;}
+.klasik-team-widget .team-tag{color:#888;}
+
+#sidebar .klasik-team-widget .team-title, 
+#sidebar .klasik-team-widget .team-title a, 
+#sidebar .klasik-team-widget .team-title a:visited{color:#444;}
+#sidebar .klasik-team-widget .team-title a:hover{color:#c3512f;}
+
+
+#footersidebar .klasik-team-widget .team-title, 
+#footersidebar .klasik-team-widget .team-title a, 
+#footersidebar .klasik-team-widget .team-title a:visited{color:#a4a4a4;}
+#footersidebar .klasik-team-widget .team-title a:hover{color:#d6d6d6;}
+
+
+/* Testimonials */
+.klasik-testimonial-widget .testi-title{ color: #444;}
+.klasik-testimonial-widget .testi-tag{ color: #444;}
+.klasik-testimonial-widget .testi-quote-wrap .testi-quote{ border-left:8px solid #6c6c6c}
+
+#footersidebar .klasik-testimonial-widget .testi-title{ color: #a4a4a4;}
+#footersidebar .klasik-testimonial-widget .testi-tag{ color: #a4a4a4;}
+
+
+/* Portfolio New */
+
+.klasik-pfnew-text .pfnew-title,
+.klasik-pfnew-text .pfnew-title a, 
+.klasik-pfnew-text .pfnew-title a:visited{color:#fff;}
+.klasik-pfnew-text .pfnew-title a:hover{color:#c3512f;}
+
+#sidebar .klasik-pfnew-text .pfnew-title,
+#sidebar .klasik-pfnew-text .pfnew-title a, 
+#sidebar .klasik-pfnew-text .pfnew-title a:visited{color:#fff;}
+#sidebar .klasik-pfnew-text .pfnew-title a:hover{color:#c3512f;}
+
+#footersidebar .klasik-pfnew-text .pfnew-title,
+#footersidebar .klasik-pfnew-text .pfnew-title a, 
+#footersidebar .klasik-pfnew-text .pfnew-title a:visited{color:#fff;}
+#footersidebar .klasik-pfnew-text .pfnew-title a:hover{color:#d6d6d6;}
+
+
+
+/*======= 4.2. Blog =======*/
+
+.sticky .posttitle{background:url(images/sticky.png) no-repeat 2px 9px}
+
+.posttitle a, .posttitle a:visited{color:#444;}
+.posttitle a:hover{color:#c3512f}
+
+.entry-comment{ background:#303030;}
+.entry-comment a, entry-comment a:visited{color:#fff}
+.comment-body .time a:hover{color:#c3512f;}
+.con-comment{ border:1px solid #e7e7e7}
+
+.entry-utility{ 
+	color:#888;
+}
+
+.entry-utility a{color:#888}
+.entry-utility a:hover{ color:#c3512f}
+
+.fn{color:#444;}
+.tdate, .reply a, .reply a:visited{color:#aaa; }
+
+.more { color:#606060}
+.more:hover{ color:#c3512f;}
+
+#nav-below{ border-top:1px solid #e7e7e7}
+
+/* Post Format */
+.entry-quote .quote-text{ color:#606060;}
+.quoteinfo{ color:#444;}
+
+.avatar{
+	border:solid 1px #ebebeb;
+    background: #ffffff;	
+}
+
+#entry-author-info{border:1px solid #e7e7e7;}
+
+article .flex-control-nav a {background: #b4b4b4;}
+article .flex-control-paging li a:hover {background: #fff;}
+article .flex-control-paging li a.flex-active {background: #fff;}
+
+/* tag's*/
+.entry-tag, .page-links {
+   color:#888;
+}
+
+
+
+/* 5. SIDEBAR SECTION 
+--------------------------------------------------------------------------------------*/
+
+#sidebar .widget-title {color:#444;}
+
+#sidebar li li{}
+#sidebar li, #sidebar li a, #sidebar li li a{color:#606060;}
+#sidebar li a:hover, #sidebar li li a:hover, #sidebar li li a.current{color:#c3512f;}
+#sidebar ul.sub-menu li, #sidebar ul.children li, #sidebar ul ul ul li{}
+#sidebar ul.sub-menu ul.sub-menu li, #sidebar ul.children ul.children li{}
+#sidebar ul.sub-menu ul.sub-menu ul.sub-menu li, #sidebar ul.children ul.children li{}
+#sidebar ul.sub-menu ul.sub-menu ul.sub-menu li ul.sub-menu li, #sidebar ul.children ul.children li ul.children li{}
+
+
+
+/* Calendar */
+.widget_calendar #wp-calendar tbody td:first-child, .widget_calendar #wp-calendar tfoot td:first-child{border-left:0px;}
+#footersidebar .widget_calendar #wp-calendar tbody td:first-child, #footersidebar .widget_calendar #wp-calendar tfoot td:first-child{border-left:0px;}
+#footersidebar .widget_calendar td{ border-color:#474747;}
+#footersidebar .widget_calendar thead th{ border-color:#474747 !important; background-color:#2d2d2d; }
+#footersidebar .widget_calendar thead th:first-child{border-left:0px;}
+#footersidebar .widget_calendar td#today{color:#e77724;}
+#footersidebar .widget_calendar td a, #footersidebar .widget_calendar td a:visited{color:#fff;}
+
+/* Search */
+#searchform .searcharea{
+	border:1px solid #e3e3e3;
+	-moz-box-shadow: 0 0 2px 0 #ebebeb;
+	-webkit-box-shadow: 0 0 2px 0 #ebebeb;
+	box-shadow: 0 0 2px 0 #ebebeb;
+}
+.woocommerce.widget_product_search #searchform #s{ border:1px solid #e3e3e3;}
+input.searchbutton {
+    background: url(images/search-icon.png) no-repeat 8px 13px !important;
+}
+#footersidebar #searchform .searcharea{border:1px solid #474747; background-color:#393939;}
+#footersidebar #searchform .searchbutton{background:#393939 url(images/search-icon.png) no-repeat 8px 5px; }
+
+#footersidebar .klasik-recent-post-widget li img{background-color:#494949;}
+#footersidebar .klasik-recent-post-widget li .smalldate{color:#a4a4a4;}
+#footersidebar .klasik-recent-post-widget li a,
+#footersidebar .klasik-recent-post-widget li a:visited{color:#ffffff;}
+
+
+
+/* 6. FOOTER SIDEBAR SECTION 
+--------------------------------------------------------------------------------------*/
+
+#outerfootersidebar{ background-color:#383838; color:#a4a4a4;}
+#footersidebar .widget-title{color:#d6d6d6; }
+#footersidebar li{color:#a4a4a4;}
+#footersidebar li a, #footersidebar li a:visited{color:#a4a4a4}
+#footersidebar li a:hover{color:#d6d6d6}
+
+#footersidebar ul.sub-menu li, #footersidebar ul.children li, #footersidebar ul ul ul li{}
+#footersidebar ul.sub-menu ul.sub-menu li, #footersidebar ul.children ul.children li{}
+#footersidebar ul.sub-menu ul.sub-menu ul.sub-menu li, #footersidebar ul.children ul.children li{}
+#footersidebar ul.sub-menu ul.sub-menu ul.sub-menu li ul.sub-menu li, #footersidebar ul.children ul.children li ul.children li{}
+
+
+
+/* 7. FOOTER SECTION 
+--------------------------------------------------------------------------------------*/
+
+#outerfooter{background-color:#2c2c2c;}
+#footer{color:#a4a4a4;}
+#footer a, #footer a:visited{color:#a4a4a4;}
+#footer a:hover{color:#d6d6d6;}
+
+/* 8. PLUGINS SECTION 
+--------------------------------------------------------------------------------------*/
+
+/* Page Navigation */
+.wp-pagenavi{}
+.wp-pagenavi .pages{color:#444;}
+.wp-pagenavi a, .wp-pagenavi a:visited{color:#444; border: 1px solid #e4e4e4; background:#fafafa}
+.wp-pagenavi .current, .wp-pagenavi a:hover{ border:1px solid #929292!important; color:#fff; background:#929292}
+.wp-pagenavi a.last, .wp-pagenavi a.last:hover, 
+.wp-pagenavi a.first, .wp-pagenavi a.first:hover{color:#444;}
+
+/* Widget Page Nav*/
+.page-numbers a,
+.page-numbers span {
+	color:#444!important; border: 1px solid #e4e4e4!important; background:#fafafa!important;
+}
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+	border:1px solid #929292!important; color:#fff!important; background:#929292!important;
+}
+
+/* Contact Form  */
+.wpcf7 p{color:#444;}
+.contact{ color:#444;}
+
+/* flickr  */
+#flickr img{ background-color:#494949;}
+
+/*** WOOCOMMERCE ***/
+.woocommerce ul.products li.product a:hover h3, .woocommerce-page ul.products li.product a:hover h3{ color:#888}
+

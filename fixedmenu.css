@@ -1,0 +1,15 @@
+
+/* FIxed Menu */
+.admin-bar .fixedmenu{top:28px!important;}
+.fixedmenu.sticky {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+}
+
+
+.fixedmenu.sticky #top{ padding:20px 0 10px;}
+.fixedmenu.sticky #logoimg img { max-height:15px}
